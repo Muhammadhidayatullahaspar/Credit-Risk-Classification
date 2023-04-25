@@ -1,3 +1,5 @@
+![credit risk](https://user-images.githubusercontent.com/100209360/234351220-e2ac340e-83f9-48d6-b5d3-7a647f9c66b6.PNG)
+
 # Credit-Risk-Classification
 This project developed a classification model to predict loan credit risk. Debt consolidation was the most common loan purpose, with good credit being prevalent. Imbalanced data was addressed using SMOTE oversampling. The model achieved high accuracy and validation scores, with suggestions for variable importance and model evaluation.
 
