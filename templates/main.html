@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Credit Risk Classification</title>
+    <style>
+      form {
+        display: inline-block;
+        width: 65%;
+        vertical-align: top;
+        border: 1px solid #ddd;
+        padding: 20px;
+        background-color: #fff;
+        color: #333;
+        font-family: Arial, sans-serif;
+      }
+
+      .sidebar {
+        display: inline-block;
+        width: 30%;
+        margin-left: 20px;
+        background-color: #f2f2f2;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        vertical-align: top;
+      }
+
+      h2 {
+        color: #ff6600;
+        font-size: 24px;
+        margin-top: 0;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      button {
+        background-color: #ff6600;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #cc5500;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Credit Risk Classification</h1>
+    <form method="POST" action="{{ url_for('predict') }}">
+      <label>Interest Rate :</label><br />
+      <input type="text" name="int_rate" /><br /><br />
+
+      <label>Grade:</label><br />
+      <select name="grade">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option></select
+      ><br /><br />
+
+      <label>Home ownership:</label><br />
+      <select name="home_ownership">
+        <option value="Mortgage">Mortgage</option>
+        <option value="None">None</option>
+        <option value="Other">Other</option>
+        <option value="Own">Own</option>
+        <option value="Rent">Rent</option></select
+      ><br /><br />
+
+      <label>purpose:</label><br />
+      <select name="purpose">
+        <option value="Car">Car</option>
+        <option value="Credit_card">Credit_card</option>
+        <option value="Debt_consolidation">Debt_consolidation</option>
+        <option value="Educational">Educational</option>
+        <option value="Home_improvement">Home_improvement</option>
+        <option value="House">House</option>
+        <option value="Major_purchase">Major_purchase</option>
+        <option value="Medical">Medical</option>
+        <option value="Moving">Moving</option>
+        <option value="Other">Other</option>
+        <option value="Renewable_energy">Renewable_energy</option>
+        <option value="Small_business">Small_business</option>
+        <option value="Vacation">Vacation</option>
+        <option value="Wedding">Wedding</option></select
+      ><br /><br />
+
+      <label>Verification Status:</label><br />
+      <select name="verification_status">
+        <option value="Not Verified">Not Verified</option>
+        <option value="Verified">Verified</option>
+        <option value="Source Verified">Source Verified</option></select
+      ><br /><br />
+
+      <label>Months since loan issue date:</label><br />
+      <input type="text" name="mths_since_issue_d" /><br /><br />
+
+      <label>Remaining outstanding principal amount:</label><br />
+      <input type="text" name="out_prncp" /><br /><br />
+
+      <label>total late fee received:</label><br />
+      <input type="text" name="total_rec_late_fee" /><br /><br />
+
+      <label>recoveries:</label><br />
+      <input type="text" name="recoveries" /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+   
+    <div class="sidebar">
+      <h2>Information:</h2>
+      <p>Nama : Muhammad Hidayatullah Aspar</p>
+      <p>
+        Linkedln :
+        <a href="https://www.linkedin.com/in/muhammadhidayatullahaspar"
+          >linkedin.com/in/muhammadhidayatullahaspar</a
+        >
+      </p>
+      <p>
+        Code Github :
+        <a
+          href="https://github.com/Muhammadhidayatullahaspar/Credit-Risk-Classification"
+          >https://github.com/Muhammadhidayatullahaspar/Credit-Risk-Classification</a
+        >
+      </p>
+      <h2>Column Descriptions:</h2>
+      <ul>
+        <li>
+          <strong>Interest Rate:</strong> Suku bunga yang dikenakan pada
+          pinjaman
+        </li>
+        <li>
+          <strong>Grade:</strong> Kategori risiko kredit, dari A (paling rendah)
+          hingga G (paling tinggi)
+        </li>
+        <li>
+          <strong>Home ownership:</strong> Kepemilikan rumah oleh peminjam,
+          dengan beberapa opsi
+        </li>
+        <li>
+          <strong>Purpose:</strong> Tujuan dari pengajuan pinjaman, dengan
+          beberapa opsi seperti car, credit_card, debt_consolidation, dan
+          lain-lain
+        </li>
+        <li>
+          <strong>Verification Status:</strong> Status verifikasi dari informasi
+          peminjam, dengan opsi Not Verified, Verified, dan Source Verified
+        </li>
+        <li>
+          <strong>Months since loan issue date:</strong> Jumlah bulan sejak
+          tanggal penerbitan pinjaman
+        </li>
+        <li>
+          <strong>Remaining outstanding principal amount:</strong> Jumlah utang
+          yang belum dibayarkan oleh peminjam
+        </li>
+        <li>
+          <strong>Total late fee received:</strong> Jumlah denda yang diterima
+          karena pembayaran terlambat
+        </li>
+        <li>
+          <strong>Recoveries:</strong> Jumlah dana yang berhasil dipulihkan dari
+          peminjam yang telat membayar
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
