@@ -11,3 +11,4 @@ scikit-learn
 scipy
 tensorflow
 tensorflow-estimator
+google-cloud-storage
