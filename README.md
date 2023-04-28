@@ -11,28 +11,27 @@ Once the model is successfully created, it can be deployed using Flask on a loca
 
 ![credit risk profilling](https://user-images.githubusercontent.com/100209360/235268497-183874d7-ce87-452d-a4f2-440d443ddca7.png)
 # Deployment
-# Jika Hasilnya good credit maka akan menghasilkan tampilan berikut
+# If the result is good credit it will produce the following display
 ![hasil good](https://user-images.githubusercontent.com/100209360/234748358-f348fadd-6f6b-4d4a-a4a1-e899b19027a8.PNG)
 
-# Jika hasilnya bad credit maka akan menghasilkan tampilan berikut
+# If the result is bad credit it will produce the following display
 ![hasil bad](https://user-images.githubusercontent.com/100209360/234748665-a9fbc408-01c3-44d4-9d08-2742eac584af.PNG)
 
-# Kesimpulan
-Berdasarkan hasil analisis dari project kredit risk untuk klasifikasi credit baik dan buruk, dapat disimpulkan bahwa sebagian besar peminjam memiliki kredit dengan grade yang baik, kepemilikan rumah yang terbanyak adalah 'MORTGAGE', tujuan pinjaman paling banyak adalah untuk debt consolidation, dan sebagian besar peminjam memiliki rasio utang terhadap pendapatan yang rendah. Selain itu, terdapat ketidakseimbangan pada data yang bisa menjadi masalah dalam analisis data, sehingga dilakukan oversampling smote untuk menyeimbangkan data. Model yang telah dibangun memiliki akurasi yang tinggi pada data train dan test, serta validasi yang baik, yaitu kc 0.99, ks 0.93, dan cross validation 0.92. Dengan demikian, model ini dapat digunakan untuk memprediksi kredit baik atau buruk dengan tingkat akurasi yang tinggi.
+# Conclusion
+Based on the analysis results of the credit risk project for classifying good and bad credit, it can be concluded that most borrowers have good credit grades, the most common home ownership status is 'MORTGAGE', the most common loan purpose is for debt consolidation, and most borrowers have a low debt-to-income ratio. Additionally, there is an imbalance in the data, which can pose a problem in data analysis, so oversampling SMOTE was performed to balance the data. The built model has a high accuracy on both the training and testing data, as well as good validation, with kc 0.95, ks 0.93, and cross-validation of 0.92. Therefore, this model can be used to predict good or bad credit with a high level of accuracy.
 
-# Saran 
+# Some other things that can be done for this project include:
 Beberapa hal lain yang dapat dilakukan untuk project ini:
 
-- Loan amount distribution: Sebaiknya dilakukan analisis lebih lanjut terkait pinjaman dengan jumlah tinggi yang mungkin berpotensi menjadi risiko kredit yang lebih tinggi, seperti dengan melihat rasio utang terhadap pendapatan dan seberapa besar pembayaran bulanan yang harus dilakukan oleh peminjam.
+- Loan amount distribution: Further analysis should be done regarding high loan amounts, which may pose a higher credit risk, by looking at the debt-to-income ratio and how much monthly payments borrowers have to make.
 
-- Distribution credit grade: Analisis ini dapat membantu untuk memahami profil risiko peminjam yang berbeda dan menentukan strategi kredit yang sesuai dengan profil risiko tersebut.
+- Distribution credit grade: This analysis can help understand the different borrower risk profiles and determine appropriate credit strategies for each risk profile.
 
-- Distribution of home ownership: Dapat dilakukan analisis lebih lanjut untuk memahami bagaimana kepemilikan rumah dapat mempengaruhi risiko kredit. Hal ini dapat membantu untuk menentukan strategi kredit yang sesuai dengan profil risiko peminjam yang berbeda.
+- Distribution of home ownership: Further analysis can be done to understand how home ownership affects credit risk. This can help determine appropriate credit strategies for different borrower risk profiles.
 
-- Loan purpose distribution: Perlu dilakukan pemantauan terhadap pinjaman dengan tujuan 'other', 'major purpose', 'small business', 'car', 'medical', 'moving', 'vacation', 'wedding', 'house', 'educational', dan 'renewable energy' karena memiliki jumlah pinjaman yang lebih sedikit dibandingkan dengan tiga tujuan pinjaman teratas.
+- Loan purpose distribution: Monitoring is needed for loans with the purpose of 'other', 'major purpose', 'small business', 'car', 'medical', 'moving', 'vacation', 'wedding', 'house', 'educational', and 'renewable energy' because they have fewer loans compared to the top three loan purposes.
 
-- Distribution of dti: Perlu dilakukan analisis lebih lanjut untuk memahami bagaimana rasio utang terhadap pendapatan mempengaruhi risiko kredit dan apakah terdapat rentang nilai DTI tertentu yang memiliki risiko kredit yang lebih tinggi.
+- Distribution of dti: Further analysis is needed to understand how the debt-to-income ratio affects credit risk and whether there are specific DTI values that pose a higher credit risk.
+- Distribution bad flag: Oversampling SMOTE can help balance data and improve model performance in predicting non-dominant cases.
 
-- Distribution bad flag: Oversampling SMOTE dapat membantu menyeimbangkan data dan memperbaiki kinerja model dalam memprediksi kasus yang tidak dominan.
-
-- Model evaluation: Perlu dilakukan pengujian model secara berkala untuk memastikan kinerja model yang konsisten dan sesuai dengan tujuan analisis. Selain itu, dapat dilakukan analisis lebih lanjut terkait faktor-faktor yang mempengaruhi kinerja model, seperti pemilihan fitur yang tepat atau penggunaan algoritma yang lebih kompleks untuk meningkatkan akurasi model.
+- Model evaluation: Regular model testing is needed to ensure consistent model performance and alignment with analysis objectives. Additionally, further analysis can be done regarding factors that affect model performance, such as selecting appropriate features or using more complex algorithms to improve model accuracy.
