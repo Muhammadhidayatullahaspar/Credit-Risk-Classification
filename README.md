@@ -1,5 +1,13 @@
-# Credit-Risk-Classification
-This end to end project developed a classification model to predict loan credit risk. Debt consolidation was the most common loan purpose, with good credit being prevalent. Imbalanced data was addressed using SMOTE oversampling. The model achieved high accuracy and validation scores, with suggestions for variable importance and model evaluation. and this model deploy using flask.
+# Background Project
+The background for the Credit Profiling System project is to assist financial institutions such as banks or financing companies in determining the credit risk of their customers. This project is crucial because credit is one of the main sources of income for financial institutions. Before granting credit, financial institutions need to perform credit risk analysis on potential customers.
+
+To perform credit risk analysis, financial institutions must evaluate the financial capability and eligibility of potential customers. To do this, they need accurate and complete data on customers' credit history, income, employment, and assets. This data can be very large and complex, especially if the financial institution has many customers.
+
+Therefore, the use of big data in the Credit Profiling System project can greatly assist financial institutions in determining the credit risk of their customers. However, this big data may have many errors and deficiencies (dirty data) that need to be cleaned and processed before use. In addition, data processing, such as feature engineering and feature scaling, is necessary to improve data quality and increase model accuracy.
+
+After the data is clean and processed, the next step is to perform modeling using machine learning techniques. In this stage, label/target variables and data preprocessing need to be done to prepare the data for machine learning models. The model can then be tested and evaluated by performing exploratory data analysis and visual analysis to determine its performance.
+
+Once the model is successfully created, it can be deployed using Flask on a local host server. This will enable financial institutions to use it in their daily activities and expedite the credit risk analysis process.
 
 ![credit risk profilling](https://user-images.githubusercontent.com/100209360/235268497-183874d7-ce87-452d-a4f2-440d443ddca7.png)
 
