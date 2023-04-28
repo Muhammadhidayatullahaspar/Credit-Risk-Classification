@@ -1,7 +1,7 @@
 # Credit-Risk-Classification
 This end to end project developed a classification model to predict loan credit risk. Debt consolidation was the most common loan purpose, with good credit being prevalent. Imbalanced data was addressed using SMOTE oversampling. The model achieved high accuracy and validation scores, with suggestions for variable importance and model evaluation. and this model deploy using flask.
 
-![credit risk](https://user-images.githubusercontent.com/100209360/234351220-e2ac340e-83f9-48d6-b5d3-7a647f9c66b6.PNG)
+![credit risk profilling](https://user-images.githubusercontent.com/100209360/235268497-183874d7-ce87-452d-a4f2-440d443ddca7.png)
 
 # Jika Hasilnya good credit maka akan menghasilkan tampilan berikut
 ![hasil good](https://user-images.githubusercontent.com/100209360/234748358-f348fadd-6f6b-4d4a-a4a1-e899b19027a8.PNG)
