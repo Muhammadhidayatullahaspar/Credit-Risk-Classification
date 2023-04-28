@@ -9,8 +9,9 @@ After the data is clean and processed, the next step is to perform modeling usin
 
 Once the model is successfully created, it can be deployed using Flask on a local host server. This will enable financial institutions to use it in their daily activities and expedite the credit risk analysis process.
 
-![credit risk profilling](https://user-images.githubusercontent.com/100209360/235268497-183874d7-ce87-452d-a4f2-440d443ddca7.png)
 # Deployment
+![credit risk profilling](https://user-images.githubusercontent.com/100209360/235268497-183874d7-ce87-452d-a4f2-440d443ddca7.png)
+
 # If the result is good credit it will produce the following display
 ![hasil good](https://user-images.githubusercontent.com/100209360/234748358-f348fadd-6f6b-4d4a-a4a1-e899b19027a8.PNG)
 
